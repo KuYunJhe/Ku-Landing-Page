@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+    /* 1. 設定根元素 html 的 box-sizing 為 border-box */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    /* 2. 讓所有元素和偽元素繼承其父元素的 box-sizing 值 */
+}
+
+a,
+h1,
+button {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-decoration: none;
+}
+
+
+.part {
+    padding: 0 15%;
+}
+
+.header {
+    height: 70px;
+
+    background-color: #1F2937;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    display: block;
+    height: 70%;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul a {
+    margin: 0 0 0 20px;
+
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-decoration: none;
+}
+
+
+
+
+.part_1 {
+    background-color: #1F2937;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.part_1 .INFO {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 60%;
+}
+
+.part_1 img {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 40%;
+
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.part_1 h1 {
+    color: white;
+
+    font-size: 50px;
+    font-weight: 900;
+
+    margin-bottom: 20px;
+}
+
+.part_1 p {
+    color: white;
+
+    font-size: 30px;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+}
+
+.part_1 button {
+    font-size: 17px;
+    font-weight: 500;
+
+    color: white;
+    background-color: #3882F6;
+    outline: none;
+    border: none;
+
+    width: 120px;
+    height: 45px;
+    border-radius: 12px;
+
+}
+
+.part_1 button:active {
+    background-color: #4172c2;    /* 按下時變暗 */
+    border-style: inset; 
+
+    outline: none;
+    border: none;
+}
+
+
+

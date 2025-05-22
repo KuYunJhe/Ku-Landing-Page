@@ -1,0 +1,60 @@
+/*
+ * CSS Reset 範例 (極簡版)
+ * 通常會針對非常多的 HTML 元素進行重置
+ */
+
+/* 1. 將所有元素的外邊距、內邊距、邊框歸零，並繼承字體 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; /* 確保字體大小不變 */
+  font: inherit;  /* 繼承父元素的字體樣式 */
+  vertical-align: baseline; /* 保持行內元素垂直對齊 */
+}
+
+/* 2. 針對 HTML5 區塊元素，確保其在舊版瀏覽器中正確顯示為區塊 */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* 3. 基礎 Body 樣式重置 */
+body {
+  line-height: 1; /* 重置行高 */
+}
+
+/* 4. 列表樣式重置 */
+ol, ul {
+  list-style: none; /* 移除列表項目的預設符號或數字 */
+}
+
+/* 5. 引號重置 (針對 blockquote 和 q 元素) */
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* 6. 表格樣式重置 */
+table {
+  border-collapse: collapse; /* 合併邊框 */
+  border-spacing: 0;
+}
+
+/* ... 實際的 Reset 檔案還會包含更多針對表單、媒體等元素的重置 ... */
