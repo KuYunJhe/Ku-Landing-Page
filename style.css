@@ -12,7 +12,8 @@ html {
 
 a,
 h1,
-button {
+button,
+p {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -49,13 +50,12 @@ button {
 .header ul a {
     margin: 0 0 0 20px;
 
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    text-decoration: none;
+    color: #F9FAF8;
+    color: #e5e7eb;
+
+    font-size: 18px;
+    font-weight: 300;
+
 }
 
 
@@ -90,18 +90,18 @@ button {
 }
 
 .part_1 h1 {
-    color: white;
+    color: #F9FAF8;
 
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 900;
 
     margin-bottom: 20px;
 }
 
 .part_1 p {
-    color: white;
+    color: #e5e7eb;
 
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 300;
 
     margin-bottom: 20px;
@@ -111,7 +111,7 @@ button {
     font-size: 17px;
     font-weight: 500;
 
-    color: white;
+    color: #F9FAF8;
     background-color: #3882F6;
     outline: none;
     border: none;
@@ -123,11 +123,97 @@ button {
 }
 
 .part_1 button:active {
-    background-color: #4172c2;    /* 按下時變暗 */
-    border-style: inset; 
+    background-color: #4172c2;
+    /* 按下時變暗 */
+    border-style: inset;
 
     outline: none;
     border: none;
+}
+
+
+
+.part_2 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.part_2 h1 {
+    /* margin: 30px 0; */
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+
+}
+
+
+.part_2 ul {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    /* flex-wrap: wrap; */
+    gap: 50px;
+    padding: 5%;
+}
+
+/* .part_2 ul {
+    background-color: rgb(138, 30, 138);
+}
+
+.part_2 il {
+    background-color: aqua;
+} */
+
+.part_2 img {
+
+    width: 100%;
+
+
+    border: 3px solid #3882F6;
+    border-radius: 20px;
+}
+
+
+.part_2 p {
+
+    margin: auto 0;
+
+    text-align: center;
+
+    font-size: 15px;
+    color: #1F2937;
+    font-weight: 300;
+
+    line-height: 150%;
+}
+
+
+
+.part_3 {
+    background-color: #e5e7eb;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    padding: 10% 20%;
+}
+
+
+.part_3 p {
+    font-size: 36px;
+    line-height: 48px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.part_3 h1 {
+    text-align: end;
+    font-size: 24px;
+    color: #1F2937;
+    font-weight: 500;
 }
 
 
