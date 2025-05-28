@@ -13,7 +13,8 @@ html {
 a,
 h1,
 button,
-p {
+p,
+footer {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -83,9 +84,11 @@ p {
     flex-shrink: 1;
     flex-basis: 40%;
 
-    max-width: 300px;
+    max-width: 600px;
     height: 100%;
     width: 100%;
+    border-radius: 20px;
+
     object-fit: contain;
 }
 
@@ -154,6 +157,8 @@ p {
     align-items: stretch;
     justify-content: space-between;
 
+
+
     /* flex-wrap: wrap; */
     gap: 50px;
     padding: 5%;
@@ -161,16 +166,17 @@ p {
 
 /* .part_2 ul {
     background-color: rgb(138, 30, 138);
-}
+} */
 
 .part_2 il {
-    background-color: aqua;
-} */
+    /* background-color: aqua; */
+
+    flex-basis: 100%;
+}
 
 .part_2 img {
 
     width: 100%;
-
 
     border: 3px solid #3882F6;
     border-radius: 20px;
@@ -183,9 +189,9 @@ p {
 
     text-align: center;
 
-    font-size: 15px;
+    font-size: 18px;
     color: #1F2937;
-    font-weight: 300;
+    font-weight: 400;
 
     line-height: 150%;
 }
@@ -218,3 +224,72 @@ p {
 
 
 
+.part_4 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+.part_4 .chunk {
+    background-color: #3882F6;
+    border-radius: 15px;
+    padding: 5% 10%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.part_4 h1 {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 500;
+}
+
+.part_4 p {
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: 300;
+    line-height: 36px;
+}
+
+
+.part_4 button {
+    width: 150px;
+    height: 42px;
+
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: 500;
+
+
+    background-color: #3882F6;
+    border: 2px solid #F9FAF8;
+    border-radius: 10px;
+}
+
+.part_4 button:active {
+    background-color: #4172c2;
+    /* 按下時變暗 */
+    border: 2px solid #f9faf88f;
+}
+
+
+.footer {
+
+
+    /* height: 70px; */
+    padding: 4%;
+
+    background-color: #1F2937;
+
+
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: 300;
+
+    text-align: center;
+
+}
